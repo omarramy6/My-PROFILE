@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
+
+body  {
+   text-align: center;
+   font-family: url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+ 
+   animation: animateBackground 10s ease infinite;
+   background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
+  background-size:cover;
+        
+        animation: slidein 100s;
+
+        
+        animation-fill-mode: forwards;
+
+        
+        animation-iteration-count: infinite;
+
+        
+        animation-direction: alternate;              
+}
+
+@-webkit-keyframes slidein {
+from {background-position: top; background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+}
+
+@keyframes slidein {
+from {background-position: top;background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+
+}
+
+
+
+.center
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(75, 75, 250, 0.3);
+  border-radius: 3px;
+}
+.center h1{
+  text-align:center;
+  color:white;
+  font-family: 'Source Code Pro', monospace;
+  text-transform:uppercase;
+}
+
+
+ 
+ .profile-image {
+   width: 300px;
+   height: 300px;
+   object-fit: cover;
+   border-radius: 50%;
+   border: 5px solid white;
+   margin-bottom: 24px;
+ }
+ 
+ @keyframes animateBackground {
+   0% {
+     background-color: #FEBD69;
+   }
+   50% {
+     background-color: #FF9D5C;
+   }
+   100% {
+     background-color: #FEBD69;
+   }
+ }
+ 
+ .container {
+   width: 80%;
+   margin: 0 auto;
+ }
+ 
+ .card-white {
+   background-color: white;
+   margin: 24px;
+   padding: 24px;
+   width: calc(80% - 48px);
+   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+   border: 1px solid black;
+   display: inline-block;
+   clear: both;
+ }
+ 
+ h1 {
+   color: black;
+   font-size: xx-large;
+ }
+ 
+ h2 {
+   color: black;
+   font-size: xx-large;
+ }
+ 
+ p {
+   color: black;
+   font-size: larger;
+   font-style: italic;
+ }
+ 
+ ul.social-media-list {
+   color: black;
+   font-size: larger;
+   text-align: center;
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+ }
+ 
+ ul.social-media-list li {
+   display: inline-block;
+   margin: 0 10px;
+ }
+ 
+ ul.social-media-list li a {
+   display: block;
+   width: 50px;
+   height: 50px;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+ }
+ 
+ ul.social-media-list li a span {
+   display: block;
+   width: 50px;
+   height: 50px;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+ }
+ 
+ ul.social-media-list li a.instagram-icon {
+   background-image: url('https://cdn3.iconfinder.com/data/icons/social-media-circle/512/circle-instagram-512.png');
+ }
+ 
+ ul.social-media-list li a.linkedin-icon {
+   background-image: url('https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-linkedin-square2-512.png');
+ }
+ 
+ 
+ .discover-ehl-button {
+   display: inline-block;
+   background-color: #4CAF50;
+   color: white;
+   padding: 14px 25px;
+   text-align: center;
+   text-decoration: none;
+   font-size: 16px;
+   margin: 8px 2px;
+   cursor: pointer;
+   border-radius: 20px;
+   transition-duration: 0.4s;
+ }
+ 
+ .discover-ehl-button:hover {
+   background-color: white;
+   color: black;
+   border: 2px solid #4CAF50;
+ }
+ 
